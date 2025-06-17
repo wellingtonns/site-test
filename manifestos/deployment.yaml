@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: site-test
+  namespace: site-test
+spec:
+  revisionhistoryLimit: 2
+  replicas: 2
+  selector:
+    matchLabels:
+      app: site-test-test
+  template:
+    metadata:
+      labels:
+        app: site-test-test
+    spec:
+      containers:
+        - name: site-test-test
+          image: welignton/site-test:8c22249
+          ports:
+            - containerPort: 8089
+

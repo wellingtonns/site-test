@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gerador de Dockerfile</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Gerador de Dockerfile para CI/CD</h1>
+
+  <div class="container">
+    <div class="card">
+      <label for="base">Imagem Base:</label>
+      <select id="base">
+        <option value="ubuntu">Ubuntu</option>
+        <option value="debian">Debian</option>
+        <option value="alpine">Alpine</option>
+      </select>
+
+      <label>Linguagens:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Node">Node</label>
+        <label><input type="checkbox" value="Python">Python</label>
+        <label><input type="checkbox" value="Java">Java</label>
+        <label><input type="checkbox" value="Go">Go</label>
+      </div>
+
+      <label>Ferramentas:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" value="Docker CLI">Docker CLI</label>
+        <label><input type="checkbox" value="Kubectl">Kubectl</label>
+        <label><input type="checkbox" value="Helm">Helm</label>
+        <label><input type="checkbox" value="Terraform">Terraform</label>
+      </div>
+
+      <button onclick="gerarDockerfile()">Gerar Dockerfile</button>
+    </div>
+
+    <div class="card">
+      <label for="output">Dockerfile Gerado:</label>
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
