@@ -8,14 +8,14 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: site-test-test
+      app: site-test
   template:
     metadata:
       labels:
-        app: site-test-test
+        app: site-test
     spec:
       containers:
-        - name: site-test-test
+        - name: site-test
           image: welignton/site-test:8c22249
           ports:
             - containerPort: 8089
