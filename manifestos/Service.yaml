@@ -4,7 +4,7 @@ metadata:
   name: site-test
   namespace: site-test
   labels:
-    monitoring: enabled
+    monitoring: disabled
     app: site-test
 spec:
   selector:
