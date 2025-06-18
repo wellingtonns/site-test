@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: site-test
-          image: welignton/site-test:8c22249
+          image: welignton/site-test:50f0854
           ports:
             - containerPort: 8089
 
