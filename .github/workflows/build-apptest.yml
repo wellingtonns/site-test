@@ -8,7 +8,7 @@ jobs:
   build:
     uses: wellingtonns/pipeline-template/.github/workflows/build-push.yml@main
     with:
-      IMAGE_NAME: welignton/apptest
+      IMAGE_NAME: welignton/site-test
       APP_NAME: site-test
     secrets: inherit
 
